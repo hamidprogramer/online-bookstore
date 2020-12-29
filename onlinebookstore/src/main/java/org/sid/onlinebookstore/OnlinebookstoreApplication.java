@@ -34,10 +34,10 @@ public class OnlinebookstoreApplication {
 			
 		  BookCategory cat=bookCategoryRepository.save(new BookCategory(null,"action",null));
 		  BookCategory cate=bookCategoryRepository.save(new BookCategory(null,"aventure",null));
-		  bookRepository.save(new Book(null,"root","disputed","por disputer","http://url",new BigDecimal(4905.1),true,50,new Date(),new Date(),cat));
-		  bookRepository.save(new Book(null,"root","draxter","laboratoire de daxtar","http://url",new BigDecimal(4905.1),true,50,new Date(),new Date(),cate));
-		  bookRepository.save(new Book(null,"root","7to word","tell me about un history","http://url",new BigDecimal(4905.1),true,50,new Date(),new Date(),cat));
-		  bookRepository.save(new Book(null,"root","no more","more and more","http://url",new BigDecimal(4905.1),true,50,new Date(),new Date(),cate));
+		  bookRepository.save(new Book(null,"root","disputed","por disputer","assets/images/books/text-2.jpg",new BigDecimal(4905.1),true,50,new Date(),new Date(),cat));
+		  bookRepository.save(new Book(null,"root","draxter","laboratoire de daxtar","assets/images/books/text-3.jpg",new BigDecimal(4905.1),true,50,new Date(),new Date(),cate));
+		  bookRepository.save(new Book(null,"root","7to word","tell me about un history","assets/images/books/text-4.jpg",new BigDecimal(4905.1),true,50,new Date(),new Date(),cat));
+		  bookRepository.save(new Book(null,"root","no more","more and more","assets/images/books/text-5.jpg",new BigDecimal(4905.1),true,50,new Date(),new Date(),cate));
 		  
 		  
 		};
