@@ -13,8 +13,9 @@ export class BookService {
   private baseUrl="http://localhost:9090/api/v1/books"
   constructor(private httpClient:HttpClient) { }
 
-  getBooks():Observable<Book[]>
+  getBooks(theCategoryId:number):Observable<Book[]>
   {
-    return this.httpClient.get<Book[]>(this.baseUrl);
+    const searchUrl=`${this.baseUrl}/search/categoryid?id=${theCategoryId}`
+    return this.httpClient.get<Book[]>(searchUrl);
   }
 }
