@@ -21,7 +21,7 @@ import lombok.ToString;
 public class BookCategory {
 
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id_category;
+	private Long id;
 	private String categoryName;
 	@OneToMany(cascade=CascadeType.ALL,mappedBy="category")
 	private Set<Book> books;
